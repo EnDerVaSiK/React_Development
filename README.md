@@ -1,2 +1,2 @@
 # React_Development
-Completing a course from Logstream - React Development
+Completing a course from Logstream - **React Development**
