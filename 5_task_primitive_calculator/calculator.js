@@ -1,6 +1,3 @@
-// const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-// const actions = ['/', '*', '+', '-']
-
 const history = $('.history-in');
 const input_screen = $('.screen-input');
 let result = 0;
@@ -35,4 +32,3 @@ function calculation() {
 function add_to_history() {
     history.append('<p class="history-item">' + result + '</p>');
 }
-
