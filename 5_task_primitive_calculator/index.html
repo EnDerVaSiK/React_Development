@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание. Примитивный калькулятор.</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <h1>Задание. Примитивный калькулятор.</h1>
+    <p>Требуется реализовать примитивный калькулятор с помощью HTML + JavaScript, используя мат. операторы изученные в ходе лекции.</p>
+    <p>Калькулятор представляет собой блок, содержащий следующие элементы в виде кнопок (button):</p>
+    <li>Набор цифр (от 0...9)</li>
+    <li>Набор действий ( /, *, +, -, = )</li>
+    <li>Форму для ручного ввода (input)</li>
+    <li>Блок с историей действий (div, с помощью метода append, добавлять значения в данный блок)</li>
+    <p>Примечание:</p>
+    <li>При нажатии на кнопки цифр/действий,  в форму ввода должно записываться значения, которые мы выбрали</li>
+    <li>При нажатии на действие "=", результат вычислений должен записываться в "Блок с историей действий"</li>
+    <li>Добавление истории действий вынести в отдельную функцию</li>
+    <li>Вычисление производить в одной функции, либо в зависимости от типа мат. действия, вызывать соответственную функцию.</li>
+    <h1>Выполненное задание:</h1>
+    <p>Код работы доступен по следующей ссылке: <a href="https://github.com/EnDerVaSiK/React_Development/tree/main/5_task_primitive_calculator">This task in my github repository - 5_task_primitive_calculator</a></p>
+    <div class="wrap">
+        <div class="myblock calculator">
+            <h2>Калькулятор</h2>
+            <div class="calc">
+                
+                <form class="calc-screen">
+                    <input class="screen-input" value="">
+                </form>
+
+                <div class="buttons">
+                    <button class="btn seven">7</button>
+                    <button class="btn eight">8</button>
+                    <button class="btn nine">9</button>
+                    <button class="btn division bg-gray">/</button>
+                    
+                    <button class="btn four">4</button>
+                    <button class="btn five">5</button>
+                    <button class="btn six">6</button>
+                    <button class="btn multiply bg-gray">*</button>
+
+                    <button class="btn one">1</button>
+                    <button class="btn two">2</button>
+                    <button class="btn three">3</button>
+                    <button class="btn addition bg-gray">+</button>
+
+                    <button class="btn zero">0</button>
+                    <button class="btn equal bg-gray">=</button>
+                    <button class="btn subtraction bg-gray">-</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="myblock">
+            <h2>Блок с историей действий</h2>
+            <div class="history">
+                <div class="history-in">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>
